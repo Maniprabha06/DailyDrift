@@ -1,0 +1,14 @@
+.footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  color: #555555;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+
+.footer-author {
+  font-weight: bold;
+}
