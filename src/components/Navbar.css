@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -5,6 +8,13 @@
   padding: 1rem 2rem;
   background-color: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .navbar-left {
@@ -29,7 +39,7 @@
   cursor: pointer;
 }
 
-/* Modal Styles */
+/* Modal Styling */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -43,22 +53,24 @@
 }
 
 .modal-content {
-  background: white;
+  background: #fff;
+  border-radius: 10px;
   width: 400px;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  position: relative;
   padding: 20px;
+  position: relative;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
 }
 
 .close-modal {
   position: absolute;
   top: 10px;
   right: 10px;
+  font-size: 20px;
   background: none;
   border: none;
-  font-size: 20px;
   cursor: pointer;
 }
 
@@ -74,33 +86,71 @@
 }
 
 .modal-body {
-  text-align: center;
+  margin-top: 20px;
 }
 
+.modal-body label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Modal input fields */
 .modal-input {
-  width: 90%;
-  padding: 10px;
-  margin: 10px 0;
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  margin: 8px 0 16px; /* Adjust margin as needed */
+  font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
-.modal-btn {
+/* Label styles */
+.modal-body label {
   display: block;
-  width: 90%;
+  font-size: 14px; /* Adjust size for readability */
+  font-weight: bold; /* Optional: Make the label stand out */
+  margin-bottom: 4px; /* Add spacing between label and input */
+  text-align: left; /* Align to the left */
+}
+
+
+.modal-btn {
+  width: 100%;
   padding: 10px;
-  margin: 10px auto;
-  background: #222;
-  color: white;
+  margin-bottom: 10px;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
-  border-radius: 4px;
 }
 
 .modal-btn.primary {
-  background: #000;
+  background-color: #007bff;
+  color: #fff;
 }
 
-.modal-btn:hover {
-  background: #555;
+.modal-btn:not(.primary) {
+  background-color: #f8f9fa;
+  color: #007bff;
+}
+
+.modal-body p {
+  text-align: center;
+}
+
+.modal-body a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.link {
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #0056b3;
 }

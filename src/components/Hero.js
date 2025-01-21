@@ -7,7 +7,7 @@ const Hero = () => {
     <main className="hero-section">
       <img src={logo} alt="Profile" className="profile-pic" />
       <h1 className="hero-title">Maniprabha ShankarGanesh</h1>
-      <h1>Welcome to DailyDrift</h1>
+      <h1 className="hero-subheading">Welcome to DailyDrift</h1>
       <p className="hero-description">
       Dive into a world of thoughts, insights, and reflections. Explore my
       mind, one post at a time

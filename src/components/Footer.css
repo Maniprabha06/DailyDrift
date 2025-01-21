@@ -2,11 +2,16 @@
   margin-top: 2rem;
   padding: 1rem;
   color: #555555;
+
 }
 
 .footer-text {
   font-size: 0.9rem;
   margin-bottom: 0.2rem;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .footer-author {
